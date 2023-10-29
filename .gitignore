@@ -1,0 +1,5 @@
+*.o
+*.d
+output
+lib
+include
