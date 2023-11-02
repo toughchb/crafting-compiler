@@ -1,16 +1,9 @@
 #pragma once
-#include <string>
-#include <vector>
-#include <iomanip>
-#include <iostream>
 #include "Token.h"
+#include "Node.h"
 
-using std::cout;
-using std::endl;
-using std::setw;
-using std::left;
 using std::string;
-using std::vector;
 
+auto printSyntaxTree(Program*)->void;
 auto scan(string)->vector<Token>;
-auto printTokenList(vector<Token>)->void;
+auto parse(vector<Token>)->Program*;
